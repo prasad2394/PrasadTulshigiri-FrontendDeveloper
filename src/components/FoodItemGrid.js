@@ -7,7 +7,7 @@ import FoodModal from './FoodModal';
 
 const FoodItemGrid = () => {
   const [modalOpen, setModalOpen] = useState(false);
-  const [selectedFoodId, setSelectedFoodId] = useState(null);
+  //const [selectedFoodId, setSelectedFoodId] = useState(null);
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 8;
 
@@ -19,14 +19,14 @@ const FoodItemGrid = () => {
   const dispatch = useDispatch();
 
   const handleBoxClick = (id) => {
-    setSelectedFoodId(id);
+    //setSelectedFoodId(id);
     setModalOpen(true);
     dispatch(fetchFoodDetail(id));
   }
 
   const closeModal = () => {
     setModalOpen(false);
-    setSelectedFoodId(null);
+    //setSelectedFoodId(null);
   }
 
 
