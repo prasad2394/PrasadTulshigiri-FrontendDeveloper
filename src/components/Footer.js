@@ -4,7 +4,7 @@ import React from 'react';
 const Footer = () => {
     return (
       <>
-          <footer className="mx-auto mt-16 bg-black w-full max-w-container px-4 sm:px-6 lg:px-8">
+          <footer className="mx-auto mt-16 bg-black w-full max-w-container sm:px-6 lg:px-8 px-10">
                 <div className="container  px-5 mx-auto flex items-center justify-between">
                     <div className="border-t border-slate-900/5 pt-10">
                         <img src="/assets/swiggy_logo_footer.png" className="h-14" alt="footer-logo"/>

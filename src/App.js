@@ -17,7 +17,7 @@ const App = () => {
   return (
     <Provider store={store} className="font-sans">
       <Header />
-      <div className="container mx-auto p-4">
+      <div className="container mx-auto">
         <Filter />
         <FoodItemGrid />
       </div>
