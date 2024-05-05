@@ -46,7 +46,7 @@ const FoodItemGrid = () => {
 
   return (
     <div className="container mx-auto">
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 px-8">
+      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-4 px-10">
         {currentItems.map((item, index) => (
           <div key={item.idMeal} className="mb-6 hover:scale-95 transition-transform duration-300 ease-in-out" onClick={() => handleBoxClick(item.idMeal)}>
             <img src={item.strMealThumb} alt={item.strMeal} className="w-full rounded-lg h-48 object-cover mb-2" />
@@ -63,7 +63,7 @@ const FoodItemGrid = () => {
         ))}
 
         <FoodModal isOpen={modalOpen} closeModal={closeModal} foodDetail={foodDetail} foodRatings={foodRatings} />
-
+        </div>
         <div className="col-span-4 flex justify-center mt-6">
           {foodItems.length > itemsPerPage && (
             <ul className="flex space-x-2">
@@ -80,8 +80,6 @@ const FoodItemGrid = () => {
             </ul>
           )}
         </div>
-
-      </div>
     </div>
   );
 };
