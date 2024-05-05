@@ -49,16 +49,14 @@ const FoodItemGrid = () => {
       <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-4 px-10">
         {currentItems.map((item, index) => (
           <div key={item.idMeal} className="mb-6 hover:scale-95 transition-transform duration-300 ease-in-out" onClick={() => handleBoxClick(item.idMeal)}>
-            <img src={item.strMealThumb} alt={item.strMeal} className="w-full rounded-lg h-48 object-cover mb-2" />
+            <img src={item.strMealThumb} alt={item.strMeal} className="w-full rounded-lg sm:h-48 h-30 object-cover mb-2" />
             <h3 className="text-lg font-bold">{item.strMeal}</h3>
-            <p>{item.strCategory}</p>
             <div className="flex items-center mt-2">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
                 <path fillRule="evenodd" d="M8.458 1.355a.5.5 0 01.884 0l1.699 3.411a.5.5 0 00.448.277l3.779.549c.27.039.378.36.174.546l-2.73 2.666a.5.5 0 00-.145.543l1.396 3.895c.075.21-.195.38-.385.273l-3.474-2.228a.5.5 0 00-.553 0l-3.474 2.228c-.19.107-.46-.063-.385-.273l1.396-3.895a.5.5 0 00-.145-.543l-2.73-2.666a.5.5 0 01.174-.546l3.779-.549a.5.5 0 00.448-.277l1.699-3.411z" clipRule="evenodd" />
               </svg>
               <span className="ml-1">{foodRatings[index]}</span>
             </div>
-            <p>{item.strTags}</p>
           </div>
         ))}
 
