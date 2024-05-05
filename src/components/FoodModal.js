@@ -44,7 +44,7 @@ const Modal = ({ isOpen, closeModal, foodDetail, foodRatings}) => {
                 {foodDetail && (
                   <>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-2">
-                        <div className="mb-0 sm:mb-5">
+                        <div className="mb-5 md:mb-0">
                             <img className="h-60 rounded-2xl" src={foodDetail.strMealThumb} alt={foodDetail.strMeal} />
                         </div>
                         <div>
