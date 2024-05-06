@@ -29,42 +29,59 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### `Components`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Create React components to structure your application. Here are some components you might consider:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### `App`
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The main component that orchestrates the application's structure.
 
-## Learn More
+### `FoodList` 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+A component to display a list of food items.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### `FoodItem`
 
-### Code Splitting
+A component to represent a single food item.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### `FoodDetails`
 
-### Analyzing the Bundle Size
+A component to display detailed information about a selected food item.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### `Filter`
 
-### Making a Progressive Web App
+Created Filter Component for fetching data by area
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### `API Used for WebApp (Endpoints)`
 
-### Advanced Configuration
+* fetch by area : https://www.themealdb.com/api/json/v1/1/filter.php?a=
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+* fetch food item detail : https://www.themealdb.com/api/json/v1/1/lookup.php?i= 
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### `State Management`
 
-### `npm run build` fails to minify
+Used REDUX for state management in this WebApp
+The list of food items.
+Selected food item details.
+Loading state while fetching data.
+Error state for handling any fetch errors.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### `Fetching Data`
+
+Implement functionality to fetch food items and details from an API. For fetching used Axios Library.
+
+### `Rendering Data`
+Render the fetched food items and their details in the appropriate components. 
+
+### `JEST Testing`
+
+Created one test case for API data testing, you can see below files
+
+* __test__/foodapi.test.js : Created one test case
+* apitest/fetchFoodByArea.js : Fetch Simple API here by area.
+
+### `WebApp Video URL`
+https://vimeo.com/943012808?share=copy
