@@ -30,6 +30,10 @@ Your app is ready to be deployed!
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 
+### `Tailwind`
+
+Used Tailwind to design components structure.
+
 ### `Components`
 
 Create React components to structure your application. Here are some components you might consider:
